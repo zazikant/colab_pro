@@ -28,10 +28,9 @@ app = App(token=SLACK_BOT_TOKEN)
 
 # Initialize the Flask app
 # Flask is a web application framework written in Python
-app = Flask(__name__)
-run_with_ngrok(app)
+flask_app = Flask(__name__)
+run_with_ngrok(flask_app)
 handler = SlackRequestHandler(app)
-
 
 def get_bot_user_id():
     """
@@ -84,7 +83,7 @@ def handle_mentions(body, say):
     say(response)
 
 
-@app.route("/slack/events", methods=["POST"])
+@flask_app.route("/slack/events", methods=["POST"])
 def slack_events():
     """
     Route for handling Slack events.
@@ -98,4 +97,4 @@ def slack_events():
 
 # Run the Flask app
 if __name__ == "__main__":
-    app.run()
+    flask_app.run()

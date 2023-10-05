@@ -10,7 +10,7 @@ openai
 python-dotenv
 langchain
 pypdf
-pandas
+pandas==1.5.3
 pandasai
 slack-sdk
 slack-bolt
