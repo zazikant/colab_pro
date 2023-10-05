@@ -12,10 +12,7 @@ import openai
 import pprint
 import json
 import pandas as pd
-from pandasai import PandasAI
 from pandasai.llm.openai import OpenAI
-from langchain import HuggingFaceHub
-from langchain.document_loaders import PyPDFLoader
 from dotenv import load_dotenv
 
 import requests
@@ -33,9 +30,6 @@ openai.api_key = os.environ["OPENAI_API_KEY"]
 
 
 from dotenv import find_dotenv, load_dotenv
-from langchain import OpenAI
-from langchain.chat_models import ChatOpenAI
-from langchain.agents import load_tools, initialize_agent, create_pandas_dataframe_agent, Tool, AgentType
 
 import pandas as pd
 
