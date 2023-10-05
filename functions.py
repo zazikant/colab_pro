@@ -24,10 +24,6 @@ import io
 load_dotenv(find_dotenv())
 
 load_dotenv()
-API_KEY = os.environ.get("API_KEY")
-HUGGINGFACEHUB_API_TOKEN = os.environ["HUGGINGFACEHUB_API_TOKEN"]
-openai.api_key = os.environ["OPENAI_API_KEY"]
-
 
 from dotenv import find_dotenv, load_dotenv
 
