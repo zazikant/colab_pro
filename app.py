@@ -4,7 +4,7 @@ from slack_sdk.errors import SlackApiError
 from slack_bolt.adapter.flask import SlackRequestHandler
 from slack_bolt import App
 from dotenv import find_dotenv, load_dotenv
-# from functions import draft_email
+from functions import draft_email
 
 from flask_ngrok import run_with_ngrok
 from flask import Flask, render_template, request
