@@ -16,3 +16,4 @@ slack-sdk
 slack-bolt
 ipython==7.34.0
 sqlalchemy>=2.0
+astor
