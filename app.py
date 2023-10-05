@@ -84,7 +84,7 @@ def handle_mentions(body, say):
     say(response)
 
 
-@flask_app.route("/slack/events", methods=["POST"])
+@app.route("/slack/events", methods=["POST"])
 def slack_events():
     """
     Route for handling Slack events.
@@ -98,4 +98,4 @@ def slack_events():
 
 # Run the Flask app
 if __name__ == "__main__":
-    flask_app.run()
+    app.run()
