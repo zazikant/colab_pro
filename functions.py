@@ -39,7 +39,7 @@ def draft_email(user_input):
         "project_id": 1,
         "user_id": 640,
         "token": "7efbfacb7556e57d0702",
-        "page_size": 2
+        "page_size": 7
     }
 
     llm = OpenAI()
