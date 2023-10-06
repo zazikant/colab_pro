@@ -11,7 +11,7 @@ python-dotenv
 langchain
 pypdf
 pandas==1.5.3
-pandasai
+pandasai --upgrade
 slack-sdk
 slack-bolt
 ipython==7.34.0

@@ -28,8 +28,6 @@ load_dotenv()
 from dotenv import find_dotenv, load_dotenv
 
 import pandas as pd
-
-
 from pandasai import SmartDataframe
 from pandasai.llm import OpenAI
 
@@ -67,7 +65,7 @@ def draft_email(user_input):
         writer.writeheader()
         for location in locations:
             writer.writerow(location)
-
+            
     df = pd.read_csv("./shashi/locations.csv")
 
     sdf = SmartDataframe(df, config={"llm": llm})
