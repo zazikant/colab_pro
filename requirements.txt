@@ -4,7 +4,7 @@ transformers
 scipy
 slack-sdk
 slack-bolt
-ipython==7.34.0
+ipython==8.13.1
 sqlalchemy>=2.0
 astor
 ftfy
