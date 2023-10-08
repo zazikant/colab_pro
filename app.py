@@ -76,9 +76,6 @@ def handle_mentions(body, say):
 
     mention = f"<@{SLACK_BOT_USER_ID}>"
     text = text.replace(mention, "").strip()
-    
-    unwanted_text = "A new Submission A new Form Submission has been received Message"
-    text = text.replace(unwanted_text, "").strip()
 
     say("Sure, I'll get right on that!")
     # response = my_function(text)
