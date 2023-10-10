@@ -14,6 +14,7 @@ import json
 import pandas as pd
 from pandasai.llm.openai import OpenAI
 from dotenv import load_dotenv
+import re
 
 import requests
 import csv
@@ -75,3 +76,17 @@ def draft_email(user_input):
     response = sdf.last_code_generated.__str__()
 
     return response
+
+
+def extract_email(user_input):
+    # Regular expression pattern to match email addresses
+    email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+    
+    # Search for email pattern in the user input
+    match = re.search(email_pattern, user_input)
+    
+    if match:
+        email = match.group(0)  # Extract the email address
+        return email
+    
+    return None

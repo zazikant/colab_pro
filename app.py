@@ -4,8 +4,9 @@ from slack_sdk.errors import SlackApiError
 from slack_bolt.adapter.flask import SlackRequestHandler
 from slack_bolt import App
 from dotenv import find_dotenv, load_dotenv
-from functions import draft_email
+from functions import draft_email, extract_email
 import requests
+import json
 
 from flask_ngrok import run_with_ngrok
 from flask import Flask, render_template, request
@@ -80,14 +81,22 @@ def handle_mentions(body, say):
 
     say("Sure, I'll get right on that!")
     # response = my_function(text)
+    
+     # Extract the email from the text
+    email = extract_email(text)
+    
     response = draft_email(text)
     
     # Make the POST request
     url = "https://hook.us1.make.com/ohyonocw701n4ynie637qcm3roe3yrhn"
     headers = {"Content-Type": "application/json"}
-    data = {"response": response}
-
-    post_response = requests.post(url, headers=headers, json=data)
+    payload = {"email": email, "response": response}
+    data = json.dumps(payload)
+    # data = {"response": response}
+    
+    # post_response = requests.post(url, headers=headers, json=data)
+    
+    post_response = requests.post(url, headers=headers, data=data)
 
     # Check the response status code
     if post_response.status_code == 200:
