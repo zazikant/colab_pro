@@ -7,6 +7,7 @@ from dotenv import find_dotenv, load_dotenv
 from functions import draft_email, extract_email
 import requests
 import json
+import time
 
 from flask_ngrok import run_with_ngrok
 from flask import Flask, render_template, request
@@ -33,6 +34,16 @@ app = App(token=SLACK_BOT_TOKEN)
 flask_app = Flask(__name__)
 run_with_ngrok(flask_app)
 handler = SlackRequestHandler(app)
+
+# Define a function to keep Colab active
+def keep_colab_active():
+    while True:
+        print("Colab is still active")
+        time.sleep(300)  # Sleep for 5 minutes
+
+# Start the function in a separate thread to keep running in the background
+import threading
+threading.Thread(target=keep_colab_active).start()
 
 def get_bot_user_id():
     """

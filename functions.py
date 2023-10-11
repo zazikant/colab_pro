@@ -6,7 +6,6 @@ from langchain.prompts.chat import (
     SystemMessagePromptTemplate,
     HumanMessagePromptTemplate,
 )
-
 import os
 import openai
 import pprint
@@ -90,3 +89,5 @@ def extract_email(user_input):
         return email
     
     return None
+
+
