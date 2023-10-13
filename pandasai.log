@@ -1,0 +1,350 @@
+2023-10-13 15:44:00 [INFO] Question: My email id is ooobhaboo. get top 3 locations
+2023-10-13 15:44:00 [INFO] Running PandasAI with langchain_openai LLM...
+2023-10-13 15:44:00 [INFO] Prompt ID: f4c58da7-e142-43a8-b586-5e6135b460cf
+2023-10-13 15:44:00 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 21 rows and 2 columns.
+This is the metadata of the dataframe dfs[0]:
+location_id,location_name
+63896,Floor 1
+63887,Ground
+63884,Basement
+63893,P2
+63890,P1
+</dataframe>
+
+<conversation>
+User 1: My email id is ooobhaboo. get top 3 locations
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2023-10-13 16:10:23 [INFO] Question: get top 3 locations
+2023-10-13 16:10:23 [INFO] Running PandasAI with langchain_openai LLM...
+2023-10-13 16:10:23 [INFO] Prompt ID: 0f66fa95-55d9-4f32-b876-eb96331544c3
+2023-10-13 16:10:23 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 21 rows and 2 columns.
+This is the metadata of the dataframe dfs[0]:
+location_id,location_name
+63887,Ground
+63890,P1
+63896,Floor 1
+63884,Basement
+63893,P2
+</dataframe>
+
+<conversation>
+User 1: get top 3 locations
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2023-10-13 16:19:16 [INFO] Question: get top 3 locations
+2023-10-13 16:19:16 [INFO] Running PandasAI with langchain_openai LLM...
+2023-10-13 16:19:16 [INFO] Prompt ID: d9cc6fbe-bbe8-43bc-ba19-8a2ecb791aa9
+2023-10-13 16:19:16 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 21 rows and 2 columns.
+This is the metadata of the dataframe dfs[0]:
+location_id,location_name
+63884,Basement
+63890,P1
+63887,Ground
+63896,Floor 1
+63893,P2
+</dataframe>
+
+<conversation>
+User 1: get top 3 locations
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2023-10-13 16:20:22 [INFO] Question: top 3 locations
+2023-10-13 16:20:22 [INFO] Running PandasAI with langchain_openai LLM...
+2023-10-13 16:20:22 [INFO] Prompt ID: 7797d391-008f-4209-8943-22a771a1e083
+2023-10-13 16:20:22 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 21 rows and 2 columns.
+This is the metadata of the dataframe dfs[0]:
+location_id,location_name
+63896,Floor 1
+63893,P2
+63887,Ground
+63890,P1
+63884,Basement
+</dataframe>
+
+<conversation>
+User 1: top 3 locations
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2023-10-13 16:21:21 [INFO] Question: top 3 locations
+2023-10-13 16:21:21 [INFO] Running PandasAI with langchain_openai LLM...
+2023-10-13 16:21:21 [INFO] Prompt ID: 5597dad4-75dc-4446-a5db-fa08c3889fc7
+2023-10-13 16:21:21 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 21 rows and 2 columns.
+This is the metadata of the dataframe dfs[0]:
+location_id,location_name
+63896,Floor 1
+63893,P2
+63887,Ground
+63890,P1
+63884,Basement
+</dataframe>
+
+<conversation>
+User 1: top 3 locations
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2023-10-13 16:21:42 [INFO] Question: top 3 locations_name
+2023-10-13 16:21:43 [INFO] Running PandasAI with langchain_openai LLM...
+2023-10-13 16:21:43 [INFO] Prompt ID: 60e0fc57-e79a-4d90-89d3-1a5fc7074adb
+2023-10-13 16:21:43 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 21 rows and 2 columns.
+This is the metadata of the dataframe dfs[0]:
+location_id,location_name
+63896,Floor 1
+63893,P2
+63887,Ground
+63890,P1
+63884,Basement
+</dataframe>
+
+<conversation>
+User 1: top 3 locations_name
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2023-10-13 16:25:14 [INFO] Question: top 3 locations_name
+2023-10-13 16:25:14 [INFO] Running PandasAI with langchain_openai LLM...
+2023-10-13 16:25:14 [INFO] Prompt ID: 4243fa9c-88ff-435f-ae5f-ff7db2695029
+2023-10-13 16:25:14 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 21 rows and 2 columns.
+This is the metadata of the dataframe dfs[0]:
+location_id,location_name
+63884,Basement
+63887,Ground
+63893,P2
+63890,P1
+63896,Floor 1
+</dataframe>
+
+<conversation>
+User 1: top 3 locations_name
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+

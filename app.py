@@ -4,7 +4,7 @@ from slack_sdk.errors import SlackApiError
 from slack_bolt.adapter.flask import SlackRequestHandler
 from slack_bolt import App
 from dotenv import find_dotenv, load_dotenv
-from functions import draft_email, extract_email
+from functions import draft_email
 import requests
 import json
 import time
@@ -32,7 +32,7 @@ app = App(token=SLACK_BOT_TOKEN)
 # Initialize the Flask app
 # Flask is a web application framework written in Python
 flask_app = Flask(__name__)
-run_with_ngrok(flask_app)
+# run_with_ngrok(flask_app)
 handler = SlackRequestHandler(app)
 
 # Define a function to keep Colab active
@@ -93,10 +93,8 @@ def handle_mentions(body, say):
     say("Sure, I'll get right on that!")
     # response = my_function(text)
     
-     # Extract the email from the text
-    email = extract_email(text)
-    
-    response = draft_email(text)
+    # Extract the email from the text
+    email, response = draft_email(text)
     
     # Make the POST request
     url = "https://hook.us1.make.com/ohyonocw701n4ynie637qcm3roe3yrhn"
