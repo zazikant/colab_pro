@@ -90,8 +90,7 @@ def parser(text):
     output_dict = parser.parse(response)
     return output_dict
 
-import base64  
- 
+    
 def draft_email(user_input):
     # Define the API endpoint URL and parameters
     url = "http://13.232.224.37:8080/aurum/rest/v1/location/db/findall"
@@ -108,11 +107,8 @@ def draft_email(user_input):
     
     content = parser_output["content"]
 
-    from pandasai.llm import OpenAI
-    from pandasai import PandasAI
-    
     llm = OpenAI()
-       
+
     # # Make a GET request for each page and extract the desired fields
     locations = []
     for page_num in range(1, 4):
@@ -138,19 +134,8 @@ def draft_email(user_input):
 
     sdf = SmartDataframe(df, config={"llm": llm})
 
-    #sdf.chat(content)
-    # sdf.chat("plot chart of basement, ground, podium2 with location id")
-    
-    pandas_ai = PandasAI(llm, conversational=False,verbose=True,save_charts=True)
-    
-    pandas_ai.run(df, prompt="plot chart of basement, ground, podium2 with location id")
+    sdf.chat(content)      
 
     response = sdf.last_code_generated.__str__()
-    
-    def encode_image(image_path):
-        with open(image_path, "rb") as image_file:
-            return base64.b64encode(image_file.read()).decode('utf-8')
-        
-    image = encode_image("colab_pro_app\exports\charts\chart.png")
 
-    return email, response, image
+    return email, response
