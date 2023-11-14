@@ -348,3 +348,595 @@ Using the provided dataframes (`dfs`), update the python code based on the last 
 
 Updated code:
 
+2023-11-14 19:57:18 [INFO] Question: plot chart of top 2 location names by count vs sum of location ids
+2023-11-14 19:57:19 [INFO] Running PandasAI with langchain_openai LLM...
+2023-11-14 19:57:19 [INFO] Prompt ID: e2ce58d5-579a-4094-8325-75077f94f7d9
+2023-11-14 19:57:19 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 21 rows and 2 columns.
+This is the metadata of the dataframe dfs[0]:
+location_id,location_name
+63896,Floor 1
+63890,P1
+63884,Basement
+63893,P2
+63887,Ground
+</dataframe>
+
+<conversation>
+User 1: plot chart of top 2 location names by count vs sum of location ids
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2023-11-14 19:58:23 [INFO] Question: plot chart of count of top 5 locations
+2023-11-14 19:58:23 [INFO] Running PandasAI with langchain_openai LLM...
+2023-11-14 19:58:23 [INFO] Prompt ID: 43fd453b-2b40-4597-90fc-b6231f2c45cc
+2023-11-14 19:58:23 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 21 rows and 2 columns.
+This is the metadata of the dataframe dfs[0]:
+location_id,location_name
+63896,Floor 1
+63890,P1
+63884,Basement
+63893,P2
+63887,Ground
+</dataframe>
+
+<conversation>
+User 1: plot chart of count of top 5 locations
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2023-11-14 20:00:18 [INFO] Question: plot chart of count of top 5 location_name
+2023-11-14 20:00:18 [INFO] Running PandasAI with langchain_openai LLM...
+2023-11-14 20:00:18 [INFO] Prompt ID: bdc74449-e9f8-486a-8e2f-d03aaaaa1578
+2023-11-14 20:00:18 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 21 rows and 2 columns.
+This is the metadata of the dataframe dfs[0]:
+location_id,location_name
+63896,Floor 1
+63890,P1
+63884,Basement
+63893,P2
+63887,Ground
+</dataframe>
+
+<conversation>
+User 1: plot chart of count of top 5 location_name
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2023-11-14 20:01:48 [INFO] Question: plot chart of basement, ground, podium2 with location id
+2023-11-14 20:01:48 [INFO] Running PandasAI with langchain_openai LLM...
+2023-11-14 20:01:48 [INFO] Prompt ID: 2fa1158d-8800-4325-acd3-7f8316a35831
+2023-11-14 20:01:48 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 21 rows and 2 columns.
+This is the metadata of the dataframe dfs[0]:
+location_id,location_name
+63884,Basement
+63887,Ground
+63890,P1
+63896,Floor 1
+63893,P2
+</dataframe>
+
+<conversation>
+User 1: plot chart of basement, ground, podium2 with location id
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2023-11-14 20:03:30 [INFO] Question: plot chart of basement, ground, podium2 with location id
+2023-11-14 20:03:30 [INFO] Running PandasAI with langchain_openai LLM...
+2023-11-14 20:03:30 [INFO] Prompt ID: 2c984b0e-f2b1-4579-95d7-d86800fe9241
+2023-11-14 20:03:30 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 21 rows and 2 columns.
+This is the metadata of the dataframe dfs[0]:
+location_id,location_name
+63884,Basement
+63887,Ground
+63890,P1
+63896,Floor 1
+63893,P2
+</dataframe>
+
+<conversation>
+User 1: plot chart of basement, ground, podium2 with location id
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2023-11-14 20:05:12 [INFO] Question: plot chart of basement, ground, podium2 with location id
+2023-11-14 20:05:12 [INFO] Running PandasAI with openai LLM...
+2023-11-14 20:05:12 [INFO] Prompt ID: 0deaa341-627e-4e8c-ab1d-1c4a6a7c1b8f
+2023-11-14 20:05:12 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 21 rows and 2 columns.
+This is the metadata of the dataframe dfs[0]:
+location_id,location_name
+63893,P2
+63890,P1
+63887,Ground
+63884,Basement
+63896,Floor 1
+</dataframe>
+
+<conversation>
+User 1: plot chart of basement, ground, podium2 with location id
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2023-11-14 20:06:07 [INFO] Code generated:
+```
+# TODO import all the dependencies required
+import pandas as pd
+import matplotlib.pyplot as plt
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    # Prepare
+    df = dfs[0]
+    
+    # Process
+    locations = df['location_name']
+    location_ids = df['location_id']
+    
+    # Analyze
+    fig, ax = plt.subplots()
+    ax.bar(locations, location_ids)
+    plt.xticks(rotation=45)
+    plt.xlabel('Location Name')
+    plt.ylabel('Location ID')
+    plt.title('Location ID by Location Name')
+    plt.savefig('temp_chart.png')
+    plt.close(fig)
+    
+    return {"type": "plot", "value": "temp_chart.png"}
+```
+
+2023-11-14 20:06:07 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    df = dfs[0]
+    locations = df['location_name']
+    location_ids = df['location_id']
+    fig, ax = plt.subplots()
+    ax.bar(locations, location_ids)
+    plt.xticks(rotation=45)
+    plt.xlabel('Location Name')
+    plt.ylabel('Location ID')
+    plt.title('Location ID by Location Name')
+    plt.savefig('temp_chart.png')
+    plt.close(fig)
+    return {'type': 'plot', 'value': 'temp_chart.png'}
+        ```
+2023-11-14 20:06:07 [INFO] Answer: {'type': 'plot', 'value': 'temp_chart.png'}
+2023-11-14 20:06:07 [INFO] Executed in: 55.1400351524353s
+2023-11-14 20:14:20 [INFO] Question: plot chart of basement, ground, podium2 with location id
+2023-11-14 20:14:20 [INFO] Running PandasAI with openai LLM...
+2023-11-14 20:14:20 [INFO] Prompt ID: 08af55b1-d02d-44ee-a15b-8f6383a87681
+2023-11-14 20:14:20 [INFO] Using cached response
+2023-11-14 20:14:20 [INFO] Code generated:
+```
+# TODO import all the dependencies required
+import pandas as pd
+import matplotlib.pyplot as plt
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    # Prepare
+    df = dfs[0]
+    
+    # Process
+    locations = df['location_name']
+    location_ids = df['location_id']
+    
+    # Analyze
+    fig, ax = plt.subplots()
+    ax.bar(locations, location_ids)
+    plt.xticks(rotation=45)
+    plt.xlabel('Location Name')
+    plt.ylabel('Location ID')
+    plt.title('Location ID by Location Name')
+    plt.savefig('temp_chart.png')
+    plt.close(fig)
+    
+    return {"type": "plot", "value": "temp_chart.png"}
+```
+
+2023-11-14 20:14:20 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-11-14 20:14:20 [ERROR] Failed with error: Traceback (most recent call last):
+  File "c:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\smart_datalake\__init__.py", line 337, in chat
+    type should be returned by `analyze_data()` in generated
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\helpers\code_manager.py", line 209, in execute_code
+  File "c:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\helpers\save_chart.py", line 27, in add_save_chart
+  File "<frozen os>", line 225, in makedirs
+FileNotFoundError: [WinError 3] The system cannot find the path specified: ''
+. Retrying
+2023-11-14 20:14:20 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames with the following metadata:
+
+<dataframe>
+Dataframe dfs[0], with 21 rows and 2 columns.
+This is the metadata of the dataframe dfs[0]:
+location_id,location_name
+63887,Ground
+63896,Floor 1
+63884,Basement
+63893,P2
+63890,P1
+</dataframe>
+
+The user asked the following question:
+User 1: plot chart of basement, ground, podium2 with location id
+
+You generated this python code:
+# TODO import all the dependencies required
+import pandas as pd
+import matplotlib.pyplot as plt
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    # Prepare
+    df = dfs[0]
+    
+    # Process
+    locations = df['location_name']
+    location_ids = df['location_id']
+    
+    # Analyze
+    fig, ax = plt.subplots()
+    ax.bar(locations, location_ids)
+    plt.xticks(rotation=45)
+    plt.xlabel('Location Name')
+    plt.ylabel('Location ID')
+    plt.title('Location ID by Location Name')
+    plt.savefig('temp_chart.png')
+    plt.close(fig)
+    
+    return {"type": "plot", "value": "temp_chart.png"}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "c:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\smart_datalake\__init__.py", line 337, in chat
+    type should be returned by `analyze_data()` in generated
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\helpers\code_manager.py", line 209, in execute_code
+  File "c:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\helpers\save_chart.py", line 27, in add_save_chart
+  File "<frozen os>", line 225, in makedirs
+FileNotFoundError: [WinError 3] The system cannot find the path specified: ''
+
+
+Correct the python code and return a new python code that fixes the above mentioned error. Do not generate the same code again.
+
+2023-11-14 20:15:40 [WARNING] Failed to execute code with a correction framework [retry number: 2]
+2023-11-14 20:15:40 [ERROR] Failed with error: Traceback (most recent call last):
+  File "c:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\smart_datalake\__init__.py", line 337, in chat
+    type should be returned by `analyze_data()` in generated
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\helpers\code_manager.py", line 209, in execute_code
+  File "c:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\helpers\save_chart.py", line 27, in add_save_chart
+  File "<frozen os>", line 225, in makedirs
+FileNotFoundError: [WinError 3] The system cannot find the path specified: ''
+. Retrying
+2023-11-14 20:15:40 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames with the following metadata:
+
+<dataframe>
+Dataframe dfs[0], with 21 rows and 2 columns.
+This is the metadata of the dataframe dfs[0]:
+location_id,location_name
+63887,Ground
+63896,Floor 1
+63884,Basement
+63893,P2
+63890,P1
+</dataframe>
+
+The user asked the following question:
+User 1: plot chart of basement, ground, podium2 with location id
+
+You generated this python code:
+# TODO import all the dependencies required
+import pandas as pd
+import matplotlib.pyplot as plt
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    # Prepare
+    df = dfs[0]
+    
+    # Process
+    locations = df['location_name']
+    location_ids = df['location_id']
+    
+    # Analyze
+    fig, ax = plt.subplots()
+    ax.bar(locations, location_ids)
+    plt.xticks(rotation=45)
+    plt.xlabel('Location Name')
+    plt.ylabel('Location ID')
+    plt.title('Location ID by Location Name')
+    plt.savefig('temp_chart.png')
+    plt.close(fig)
+    
+    return {"type": "plot", "value": "temp_chart.png"}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "c:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\smart_datalake\__init__.py", line 337, in chat
+    type should be returned by `analyze_data()` in generated
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\helpers\code_manager.py", line 209, in execute_code
+  File "c:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandasai\helpers\save_chart.py", line 27, in add_save_chart
+  File "<frozen os>", line 225, in makedirs
+FileNotFoundError: [WinError 3] The system cannot find the path specified: ''
+
+
+Correct the python code and return a new python code that fixes the above mentioned error. Do not generate the same code again.
+
